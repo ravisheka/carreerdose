@@ -2,6 +2,13 @@ import React from "react";
 import "./App.css";
 
 function App() {
+
+  // window.addEventListener("scroll", function () {
+  //   document
+  //     .getElementById("header")
+  //     .classList.toggle("sticky", window.scrollY > 0);
+  // });
+    
   return (
     <div id="root">
       <header
@@ -194,7 +201,7 @@ function App() {
           </ul>
           <div aria-hidden="true"></div>
         </div>
-        <div class="ant-back-top">
+        <div class="ant-back-top" >
           <div class="ant-back-top-content">
             <div class="ant-back-top-icon">
               <span
@@ -266,7 +273,6 @@ function App() {
                       src="google.svg"
                       class="img-fluid"
                       alt="android_app_link"
-                      style={{ width: "8rem", height: "auto" }}
                     />
                   </a>
                   <a class="btn p-0" href="" download="">
@@ -275,7 +281,6 @@ function App() {
                       src="window.svg"
                       class="img-fluid"
                       alt="windows_app_link"
-                      style={{ width: "8rem", height: "auto" }}
                     />
                   </a>
                 </div>
@@ -298,12 +303,12 @@ function App() {
               <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12">
                   <video
-                    src="https://www.careerdose.com/static/media/ben_cutting.a13166be314ec905aae1.mp4"
                     class="img-fluid banner-video"
                     preload="metadata"
-                    controls=""
                     alt="Ben Cutting Promoted"
-                  ></video>
+                    src="https://www.careerdose.com/static/media/ben_cutting.a13166be314ec905aae1.mp4"
+                    controls
+                  />
                 </div>
                 <div class="col-lg-7 col-md-12 col-sm-12 cd-img-obj-left">
                   <h1 class="font-weight-bold text-cd-center">
@@ -511,7 +516,7 @@ function App() {
             />
             <img
               loading="lazy"
-              src="/static/media/timeline_mobile.49984f67c6f4ac9783d6.png"
+              src="circle.jpg"
               class="mobile_timeline img-fluid"
               alt="timeline"
             />
@@ -746,16 +751,7 @@ function App() {
                 accommodates each student’s interests and passions, giving
                 learning the freedom to flourish.
               </p>
-              <a
-                href="/language_class/french"
-                style={{
-                  backgroundColor: "#0d6efd",
-                  color: "white",
-                  borderRadius: "50rem",
-                  fontSize: "0.7rem",
-                  padding: " 0.5rem 1.6rem",
-                }}
-              >
+              <a href="/language_class/french">
                 <button class="btn btn-sm cd-btn-primary text-uppercase m-0 cd-pill letter-space">
                   <i class="fas fa-eye mr-2"></i>View More
                   <i class="fas fa-arrow-right ml-2"></i>
